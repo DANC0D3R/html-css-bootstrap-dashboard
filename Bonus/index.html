@@ -144,6 +144,122 @@
                                                 <button class="btn btn-outline-secondary button-color" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                                     +
                                                 </button>
+                                                <!-- Offcanvas Nuovo Studente -->
+                                                <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                                    <div class="offcanvas-header">
+                                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="offcanvas-body">
+                                                        <form class="row g-3 needs-validation" novalidate>
+                                                            <div class="col-6">
+                                                                <!-- Nome -->
+                                                                <label for="validationCustom01" class="form-label">Nome</label>
+
+                                                                <input type="text" class="form-control" id="validationCustom01" required>
+
+                                                                <div class="valid-feedback">
+                                                                    Looks good!
+                                                                </div>
+                                                            </div>
+                                                            <!-- Cognome -->
+                                                            <div class="col-6">
+                                                                <label for="validationCustom02" class="form-label">Cognome</label>
+
+                                                                <input type="text" class="form-control" id="validationCustom02" required>
+
+                                                                <div class="valid-feedback">
+                                                                    Looks good!
+                                                                </div>
+                                                            </div>
+                                                            <!-- E-mail -->
+                                                            <div class="col-6">
+                                                                <label for="validationCustomUsername" class="form-label">E-mail</label>
+
+                                                                <div class="input-group has-validation">
+                                                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+
+                                                                    <input type="mail" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+
+                                                                    <div class="invalid-feedback">
+                                                                        Please choose a username.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Password -->
+                                                            <div class="col-6">
+                                                                <label for="validationCustom02" class="form-label">Password</label>
+
+                                                                <input type="text" class="form-control" id="validationCustom02" required>
+
+                                                                <div class="valid-feedback">
+                                                                    Looks good!
+                                                                </div>
+                                                            </div>
+                                                            <!-- Indirizzo -->
+                                                            <div class="col-12">
+                                                                <label for="validationCustom01" class="form-label">Indirizzo</label>
+
+                                                                <input type="text" class="form-control" id="validationCustom01" required>
+
+                                                                <div class="valid-feedback">
+                                                                    Looks good!
+                                                                </div>
+                                                            </div>
+                                                            <!-- Città -->
+                                                            <div class="col-md-6">
+                                                                <label for="validationCustom03" class="form-label">Città</label>
+
+                                                                <input type="text" class="form-control" id="validationCustom03" required>
+
+                                                                <div class="invalid-feedback">
+                                                                    Please provide a valid city.
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label for="validationCustom04" class="form-label">Stato</label>
+
+                                                                <select class="form-select" id="validationCustom04" required>
+                                                                    <option selected disabled value="">Scegli...</option>
+                                                                    <option>Italia</option>
+                                                                </select>
+
+                                                                <div class="invalid-feedback">
+                                                                    Please select a valid state.
+                                                                </div>
+                                                            </div>
+                                                            <!-- CAP -->
+                                                            <div class="col-md-3">
+                                                                <label for="validationCustom05" class="form-label">CAP</label>
+
+                                                                <input type="text" class="form-control" id="validationCustom05" required>
+
+                                                                <div class="invalid-feedback">
+                                                                Please provide a valid zip.
+                                                                </div>
+                                                            </div>
+                                                            <!-- Requisiti -->
+                                                            <div class="col-12">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+
+                                                                    <label class="form-check-label" for="invalidCheck">
+                                                                        Seleziona per proseguire
+                                                                    </label>
+
+                                                                    <div class="invalid-feedback">
+                                                                        You must agree before submitting.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Bottoni -->
+                                                            <div class="col-12">
+                                                                <button class="btn btn-primary" type="submit">Salva</button>
+                                                                <button class="btn btn-warning" type="submit">Svuota</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- Boolean e Badges-->
@@ -210,12 +326,29 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button">
                                                                                 <i class="bi bi-pencil-fill"></i>
                                                                             </button>
-                                                                            <button type="button" class="btn btn-outline-secondary action-button">
+                                                                            <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
-
                                                                     <tr>
                                                                         <td >
                                                                             <div class="class-icon d-inline-block align-middle me-1">
@@ -232,12 +365,29 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button">
                                                                                 <i class="bi bi-pencil-fill"></i>
                                                                             </button>
-                                                                            <button type="button" class="btn btn-outline-secondary action-button">
+                                                                            <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
-
                                                                     <tr>
                                                                         <td >
                                                                             <div class="class-icon d-inline-block align-middle me-1">
@@ -254,12 +404,29 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button">
                                                                                 <i class="bi bi-pencil-fill"></i>
                                                                             </button>
-                                                                            <button type="button" class="btn btn-outline-secondary action-button">
+                                                                            <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
-
                                                                     <tr>
                                                                         <td >
                                                                             <div class="class-icon d-inline-block align-middle me-1">
@@ -276,12 +443,29 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button">
                                                                                 <i class="bi bi-pencil-fill"></i>
                                                                             </button>
-                                                                            <button type="button" class="btn btn-outline-secondary action-button">
+                                                                            <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
-
                                                                     <tr>
                                                                         <td >
                                                                             <div class="class-icon d-inline-block align-middle me-1">
@@ -298,12 +482,29 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button">
                                                                                 <i class="bi bi-pencil-fill"></i>
                                                                             </button>
-                                                                            <button type="button" class="btn btn-outline-secondary action-button">
+                                                                            <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
-
                                                                     <tr>
                                                                         <td >
                                                                             <div class="class-icon d-inline-block align-middle me-1">
@@ -320,12 +521,29 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button">
                                                                                 <i class="bi bi-pencil-fill"></i>
                                                                             </button>
-                                                                            <button type="button" class="btn btn-outline-secondary action-button">
+                                                                            <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
-
                                                                     <tr>
                                                                         <td >
                                                                             <div class="class-icon d-inline-block align-middle me-1">
@@ -342,12 +560,29 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button">
                                                                                 <i class="bi bi-pencil-fill"></i>
                                                                             </button>
-                                                                            <button type="button" class="btn btn-outline-secondary action-button">
+                                                                            <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
-
                                                                     <tr>
                                                                         <td >
                                                                             <div class="class-icon d-inline-block align-middle me-1">
@@ -367,8 +602,24 @@
                                                                             <button type="button" class="btn btn-outline-secondary action-button" data-bs-toggle="modal" data-bs-target="#trash-modal">
                                                                                 <i class="bi bi-trash-fill"></i>
                                                                             </button>
-
-                                                                            
+                                                                            <!-- Modale -->
+                                                                            <div class="modal fade text-center" id="trash-modal" tabindex="-1" aria-labelledby="trash-modal-label" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione</h1>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            Sei sicuro di voler cancellare questa classe?   
+                                                                                        </div>
+                                                                                        <div class="modal-footer justify-content-between">
+                                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
