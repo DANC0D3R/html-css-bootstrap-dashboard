@@ -1,0 +1,58 @@
+/* PALETTE COLORI */
+:root{
+    --ice-white-color: #F8F9FA;
+    --grey-color: #B5B5B5;
+    --light-grey-color :#E5E5E5;
+    --cobalt-color: #1B72E8;
+    --nav-page-color: #165BBA;
+    --dark-blue-color: #051E34;
+}
+
+/* --- REGOLE GENERALI --- */
+.page-container{
+    max-width: 100%;
+    max-height: 100vh;
+    min-width: 250px;
+}
+
+.image > img{
+    width: 100%;
+}
+
+.dark-blue-color{
+    background-color: var(--dark-blue-color);
+}
+
+.button-color{
+    font-weight: bolder;
+
+    border-color: #FFFFFF;
+
+    color: #FFFFFF;
+}
+
+.button-color:hover {
+    border-color: #FFFFFF;
+
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.blue-badge{
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    background-color: var(--nav-page-color);
+}
+
+.class-icon{
+    max-width: 30px;
+}
+
+.class-icon img{
+    width: 100%;
+}
+
+.action-button{
+    padding: 0.2rem 0.5rem;
+}
