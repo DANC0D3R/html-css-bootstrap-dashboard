@@ -4,19 +4,11 @@
     .overview .row .main-header-text{
         font-size: 0.8rem;
     }
-    
-    .offcanvas-width{
-        width: 50vw !important;
-    }
 }
 /* TABLET */
-@media screen and (min-width: 756px){
+@media screen and (min-width: 768px){
     .overview .row .main-header-text{
         font-size: 0.9rem;
-    }
-
-    .offcanvas-width{
-        width: 100vw !important;
     }
 }
 /* MOBILE */

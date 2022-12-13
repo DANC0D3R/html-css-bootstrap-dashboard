@@ -10,7 +10,7 @@
     }
 }
 /* TABLET */
-@media screen and (min-width: 756px){
+@media screen and (max-width: 768px){
     .overview .row .main-header-text{
         font-size: 0.9rem;
     }

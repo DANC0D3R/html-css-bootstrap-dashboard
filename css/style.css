@@ -73,10 +73,6 @@ main{
     background-color: var(--cobalt-color);
 }
 
-.offcanvas-width{
-    width: 100vw;
-}
-
 tr > *:first-child{
     width: 35%;
 }
