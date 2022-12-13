@@ -1,0 +1,94 @@
+/* ----- HEADER ----- */
+header{
+    width: 100vw;
+    height: 70px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    cursor: pointer;
+}
+
+.lens{
+    background-color: var(--light-grey-color);
+}
+
+.search-bar{
+    background-color: var(--light-grey-color);
+}
+
+.search-bar::placeholder{
+    font-size: 0.9rem;
+}
+
+#logo img{
+    max-height: 60px;
+    cursor: pointer;
+}
+
+.bell-button, .bell-button:hover, .bell-button:active{
+    border: none;
+
+    background: none;
+}
+
+.bell-button::after{
+    display: none;
+}
+
+/* CONTENUTO PAGINA */
+section .page-content{
+    height: calc(100vh - 80px);
+}
+
+/* ASIDE */
+aside{
+    background-image: url('../img/sidebar-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    
+    background-color: var(--dark-blue-color);
+}
+
+aside div ul li:hover{
+    background-color: var(--grey-color);
+}
+
+
+
+/* ----- MAIN ----- */
+main{
+    max-height: calc(100vh - 80px);
+
+    overflow-y: auto;
+
+    background-color: var(--ice-white-color);
+}
+
+.main-header{
+    background-color: var(--cobalt-color);
+}
+
+.offcanvas-width{
+    width: 100vw;
+}
+
+tr > *:first-child{
+    width: 35%;
+}
+
+.main-header-text{
+    padding-right: 10px;
+}
+
+.list-group-item img{
+    width: 100%;
+}
+
+.small-text{
+    font-size: 0.9rem;
+}
