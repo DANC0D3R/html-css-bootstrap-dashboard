@@ -9,6 +9,7 @@
         width: 50vw !important;
     }
 }
+
 /* TABLET */
 @media screen and (max-width: 768px){
     .overview .row .main-header-text{
@@ -19,7 +20,8 @@
         width: 100vw !important;
     }
 }
+
 /* MOBILE */
-@media screen and (min-width: 576px){
+@media screen and (max-width: 576px){
     
 }

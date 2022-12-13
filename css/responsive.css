@@ -5,13 +5,15 @@
         font-size: 0.8rem;
     }
 }
+
 /* TABLET */
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .overview .row .main-header-text{
         font-size: 0.9rem;
     }
 }
+
 /* MOBILE */
-@media screen and (min-width: 576px){
+@media screen and (max-width: 576px){
     
 }
