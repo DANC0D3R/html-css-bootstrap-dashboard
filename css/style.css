@@ -35,6 +35,10 @@ nav ul li{
     background: none;
 }
 
+.dropdown .btn-secondary:active{
+    background-color: transparent;
+}
+
 .bell-button::after{
     display: none;
 }

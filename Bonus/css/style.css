@@ -32,7 +32,11 @@ nav ul li{
 .bell-button, .bell-button:hover, .bell-button:active{
     border: none;
 
-    background: none;
+    background-color: transparent;
+}
+
+.dropdown .btn-secondary:active{
+    background-color: transparent;
 }
 
 .bell-button::after{
