@@ -21,3 +21,6 @@ Come sempre cercate di capire quello che state facendo, cercate di finirlo ma no
 Ricordiamo anche che Bootstrap ha già molti componenti pronti all'uso che potete utilizzare direttamente come sono (as-is) o con qualche personalizzazione (customized). Molti li avete già usati, altri li trovate come sempre nella documentazione ufficiale del framework.
 Ogni volta che volete usare un componente di Bootstrap fate sempre una prova su un altro file, copiate il codice di esempio dalla documentazione, osservate il comportamento, e solo quando siete sicuri che tutto funzioni come volete, integratelo nel vostro layout.
 Così facendo il codice CSS custom che scriverete risulterà abbastanza ridotto.
+
+<h1 align="center">Anteprima<h1>
+<div align="center"><img src="Anteprima.gif" width="800">
